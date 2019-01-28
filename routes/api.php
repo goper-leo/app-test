@@ -14,5 +14,9 @@ use Illuminate\Http\Request;
 */
 
 Route::namespace('Api')->group(function() {
-    Route::name('get.passers')->get('passers', 'PassersController@index');
+    Route::prefix('passers')->group(function() {
+      Route::name('get.passers')->get('', 'PassersController@index');
+      Route::name('store.passer')->post('store', 'PassersController@store');
+    });
+
 });

@@ -4,7 +4,7 @@
     @include('includes/header');
 
     <body>
-        <div class="flex-center position-ref full-height" id="app">
+        <div class="flex-center position-ref container-fluid" id="app">
 
             <div class="content">
                 @yield('content')
