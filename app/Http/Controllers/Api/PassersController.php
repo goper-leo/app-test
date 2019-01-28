@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\Passer;
 
-class PasserController extends Controller
+class PassersController extends Controller
 {
     /**
      * Fetch passers info's

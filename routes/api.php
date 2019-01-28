@@ -13,6 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::namespace('Api')->prefix('api')->group(function() {
-    Route::name('get.passers')->get('passers', 'PasserController@index');
+Route::namespace('Api')->group(function() {
+    Route::name('get.passers')->get('passers', 'PassersController@index');
 });

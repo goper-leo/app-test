@@ -54,3 +54,8 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+import Http from './modules/Http';
+
+// Http (ajax handler)
+window.http = new Http();

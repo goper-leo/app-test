@@ -16,7 +16,6 @@ class Passer extends Model
         'campus_eligibility',
         'school',
         'division',
-        'commentable_type',
     ];
 
 
