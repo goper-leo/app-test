@@ -1838,6 +1838,17 @@ __webpack_require__.r(__webpack_exports__);
     hideModal: function hideModal() {
       this.$refs.addEntryModal.hide();
     },
+
+    /**
+     * Reset form values
+     * @return {void}
+     */
+    reset: function reset() {
+      this.form.name = '';
+      this.form.campus_eligibility = '';
+      this.form.school = '';
+      this.form.division = '';
+    },
     save: function save() {
       var _this = this;
 
@@ -1848,6 +1859,8 @@ __webpack_require__.r(__webpack_exports__);
             message = data.message;
         _this.response.success = success;
         _this.response.message = message;
+
+        _this.reset();
       }).catch(function (error) {
         return reject(error);
       });

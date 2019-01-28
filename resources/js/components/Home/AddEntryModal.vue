@@ -82,6 +82,18 @@ import bModal from 'bootstrap-vue/es/components/modal/modal';
         this.$refs.addEntryModal.hide();
       },
 
+      /**
+       * Reset form values
+       * @return {void}
+       */
+      reset()
+      {
+        this.form.name = '';
+        this.form.campus_eligibility = '';
+        this.form.school = '';
+        this.form.division = '';
+      },
+
       save()
       {
         let form = this.form;
@@ -91,6 +103,8 @@ import bModal from 'bootstrap-vue/es/components/modal/modal';
 
             this.response.success = success;
             this.response.message = message;
+
+            this.reset();
           })
           .catch(error => reject(error));
       },
