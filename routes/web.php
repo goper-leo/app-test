@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('pages.home');
 });
+
+Route::get('/sort', function () {
+    return view('pages.sort');
+});

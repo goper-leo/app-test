@@ -17,6 +17,7 @@ Route::namespace('Api')->group(function() {
     Route::prefix('passers')->group(function() {
       Route::name('get.passers')->get('', 'PassersController@index');
       Route::name('store.passer')->post('store', 'PassersController@store');
+      Route::name('sort.passer')->get('sort', 'PassersController@sort');
     });
 
 });

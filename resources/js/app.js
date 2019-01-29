@@ -11,6 +11,7 @@ import Vue from 'vue';
 
 // components
 import PassersList from './components/Home/PassersList';
+import SortList from './components/Sort/List';
 
 class App
 {
@@ -42,32 +43,8 @@ class App
              */
             components: {
               PassersList,
+              SortList,
             },
-
-            /**
-             * Methods
-             */
-            methods: {
-
-
-            },
-
-            /**
-             * Created hook
-             */
-            created()
-            {
-              // Fetch
-
-            },
-
-            /**
-             * Mounted hook
-             */
-            mounted()
-            {
-
-            }
 
         });
     }

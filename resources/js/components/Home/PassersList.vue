@@ -9,7 +9,11 @@
             placeholder="Search">
         </div>
       </div>
-      <div class="col-6 text-right">
+      <div class="col-3">
+        <a class="btn btn-info" href="/sort">Show Number of Results Per School</a>
+      </div>
+      <div class="col-3 text-right">
+
         <AddEntryModal @refresh="fetch"/>
       </div>
     </div>
